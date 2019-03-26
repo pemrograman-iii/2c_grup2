@@ -346,72 +346,102 @@ dan pandas ini tersedia untuk semua instalasi Python.Dengan panda kita dapat den
 menjadi sebuah object data yang terdiri dari baris dan kolom yang disebut dengan DataFrame. 
 
 \end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Tia Nur Candida}
-\subsection{Pengelolaan File CSV}
+
+\section{Chandra Kirana Poetra| 1174079}
+\subsection{Teori}
 \begin{enumerate}
-\item
-Comma Separated Values atau CSV adalah suatu format data dalam basis data di mana setiap record dipisahkan dengan tanda koma atau titik koma.
 
-a.	Nilai yang dipisahkan oleh koma adalah format data yang memberi tanggal lebih awal pada komputer pribadi lebih dari satu dekade: kompiler IBM Fortran (level H extended) di bawah OS  360 mendukungnya pada tahun 1972. Bentuk bebas input output didefinisikan dalam FORTRAN 77 , disetujui pada tahun 1978. 
-Input yang diarahkan daftar menggunakan koma atau spasi untuk pembatas, sehingga string karakter yang tidak dikutip tidak dapat mengandung koma atau spasi.\\
-b.	Nama "dipisahkan oleh koma" dan singkatan "CSV" digunakan pada tahun 1983. Untuk komputer Osborne Executive, yang mem -bundle spreadsheet SuperCalc , mendokumentasikan konvensi kutipan CSV yang memungkinkan string mengandung koma yang disematkan, tetapi hal tersebut tidak menentukan konvensi untuk menanamkan tanda kutip dalam string yang dikutip.\\
-c.	Daftar nilai yang dipisahkan dengan koma lebih mudah untuk diketik (misalnya ke dalam kartu berlubang ) daripada data yang selaras dengan kolom tetap, dan cenderung menghasilkan hasil yang salah jika suatu nilai ditinju satu kolom dari lokasi yang dituju.\\
-d.	File yang dipisahkan koma digunakan untuk pertukaran informasi basis data antara mesin dari dua arsitektur yang berbeda. Karakter teks-polos dari file CSV sebagian besar menghindari ketidakcocokan seperti urutan byte dan ukuran kata.\\
-e.	Standardisasi utama - mentransformasikan "definisi fuzzy de facto " menjadi definisi yang lebih tepat dan de jure - adalah pada tahun 2005, dengan RFC4180, mendefinisikan CSV sebagai Tipe Konten MIME . Kemudian, pada 2013, beberapa kekurangan RFC4180 ditangani oleh rekomendasi W3C.\\
-f.	Pada 2014 IETF menerbitkan RFC7111 yang menjelaskan aplikasi fragmen URI pada dokumen CSV. RFC7111 menentukan bagaimana rentang baris, kolom, dan sel dapat dipilih dari dokumen CSV menggunakan indeks posisi.\\
-g.	Pada 2015 W3C , dalam upaya meningkatkan CSV dengan semantik formal , mempublikasikan draft rekomendasi pertama untuk standar metadata CSV, yang dimulai sebagai rekomendasi pada bulan Desember tahun yang sama.\\
+\item Apa itu fungsi file csv, jelaskan sejarah dan contoh?
 
-Contoh :
-\lstinputlisting[firstline=7, lastline=19]{src/4/1174086/teoricsv1174086.py}
+CSV (Comma separated Values) adalah format data yang telah ada sebelum personal komputer hadir 10 tahun sebelumnya, CSV file pada tahun 1972 telah didukung oleh IBM Fortran, nama CSV sendiri mulai digunakan pada tahun 1983, menggunakan koma dan spasi sebagai pembatas, jadi karakter string yang tidak dikutip tidak bisa mengandung koma atau spasi, list CSV lebih mudah untuk diketik daripada data yang diatur berdasarkan kolum, dan lebih terhindar dari hasil yang salah jika di cetak pada media seperti punched card.\\
 
-\item
-Aplikasi yang menghasilkan file csv diantaranya Notepad, Microsoft Excel, OpenOffice Calc, Spreadsheet, Google Docs, dan text editor lainnya.
+\lstinputlisting[firstline=0, lastline=4]{src/4/1174079/Teori/1174079.csv}
 
+\item  Aplikasi-Aplikasi apa saja yang bisa menciptakan file csv?
 
-\item
-\begin{enumerate}
-\item
-Download file template csv terlebih dahulu
-\item
-Setelah itu buka browser , lalu buka Google Sheet.
-\item
-Pada halaman sheet klik tombol yang berwarna merah di pojok kanan bawah 
-\item
-Setelah itu akan diarahkan menuju ke halaman Google Sheet. Pada halaman tersebut klik menu File lalu Open dan akan muncul pop up Open a File dan pilih tab Upload.
-\item
-Pada pop up yang muncul klik tombol Select a file from your computer dan cari file template yang sudah di download sebelumnya di langkah awal. Maka file yang sudah Anda download tadi akan muncul.
-\item
-Setelah itu dapat menambahkan data atau kolom maupun baris sesuai dengan kebutuhan. 
-\item
-Setelah selesai mengedit data tersebut lalu melakukan eksport file ke file csv. Caranya klik menu File , Download as , Comma  separated values (.csv, current sheet)
-\end{enumerate}
+\begin{itemize}
+	\item Notepad
+	\item OpenOffice Calc
+	\item Excel
+  	\item Google docs
+\end{itemize}
+CSV file adalah sebuah file berisi text jadi CSV file bisa dibuat oleh text editor apapun.
 
-\item
-a. Nilai yang dipisahkan oleh koma adalah format data yang memberi tanggal lebih awal pada komputer pribadi lebih dari satu dekade: kompiler IBM Fortran (level H extended) di bawah OS  360 mendukungnya pada tahun 1972. Bentuk bebas input output didefinisikan dalam FORTRAN 77 , disetujui pada tahun 1978. 
-Input yang diarahkan daftar menggunakan koma atau spasi untuk pembatas, sehingga string karakter yang tidak dikutip tidak dapat mengandung koma atau spasi.\\
-b.	Nama "dipisahkan oleh koma" dan singkatan "CSV" digunakan pada tahun 1983. Untuk komputer Osborne Executive, yang mem -bundle spreadsheet SuperCalc , mendokumentasikan konvensi kutipan CSV yang memungkinkan string mengandung koma yang disematkan, tetapi hal tersebut tidak menentukan konvensi untuk menanamkan tanda kutip dalam string yang dikutip.\\
-c.	Daftar nilai yang dipisahkan dengan koma lebih mudah untuk diketik (misalnya ke dalam kartu berlubang ) daripada data yang selaras dengan kolom tetap, dan cenderung menghasilkan hasil yang salah jika suatu nilai ditinju satu kolom dari lokasi yang dituju.\\
-d.	File yang dipisahkan koma digunakan untuk pertukaran informasi basis data antara mesin dari dua arsitektur yang berbeda. Karakter teks-polos dari file CSV sebagian besar menghindari ketidakcocokan seperti urutan byte dan ukuran kata\\
-e.	Standardisasi utama - mentransformasikan "definisi fuzzy de facto " menjadi definisi yang lebih tepat dan de jure - adalah pada tahun 2005, dengan RFC4180, mendefinisikan CSV sebagai Tipe Konten MIME . Kemudian, pada 2013, beberapa kekurangan RFC4180 ditangani oleh rekomendasi W3C.\\
-f.	Pada 2014 IETF menerbitkan RFC7111 yang menjelaskan aplikasi fragmen URI pada dokumen CSV. RFC7111 menentukan bagaimana rentang baris, kolom, dan sel dapat dipilih dari dokumen CSV menggunakan indeks posisi.\\
-g.	Pada 2015 W3C , dalam upaya meningkatkan CSV dengan semantik formal , mempublikasikan draft rekomendasi pertama untuk standar metadata CSV, yang dimulai sebagai rekomendasi pada bulan Desember tahun yang sama.\\
+\item Jelaskan bagaimana cara menulis dan membaca file csv di excel atau spreadsheet
 
-\item
-Wes McKinney mulai mengerjakan panda pada 2008 ketika di AQR Capital Management karena kebutuhan akan alat kinerja tinggi yang fleksibel untuk melakukan analisis kuantitatif pada data keuangan. Sebelum meninggalkan AQR, dia bisa meyakinkan manajemen untuk mengizinkannya membuka sumber perpustakaan.
-Pegawai AQR lainnya, Chang She, bergabung dengan upaya ini pada 2012 sebagai kontributor utama kedua ke perpustakaan.
-Pada 2015, panda menandatangani sebagai proyek NumFOCUS yang disponsori secara fiskal, sebuah badan amal nirlaba 501 di Amerika Serikat
-
-\item
-Fungsi yang terdapat pada CSV
+\begin{itemize}
+	\item Pertama buka terdahulu Program Excel anda
+	\item Lalu sertakan data contoh seperti screenshot di bawah
+	\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=10cm,height=10cm]{figures/4/1174079/Teori/contohmembuatcsvdengandata.png}
+	\caption{Buat data CSV}
+	\label{penanda}
+	\end{figure}
 
 
-\lstinputlisting[firstline=22, lastline=50]{src/4/1174086/teoricsv1174086.py}
+ 	\item Simpan dengan ektensi csv
+	\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=10cm,height=10cm]{figures/4/1174079/Teori/menyimpanfiledenganformatcsv.png}
+	\caption{Menyimpan CSV}
+	\label{penanda}
+	\end{figure}
 
-\item
-Fungsi Yang terdapat pada Pandas
-\lstinputlisting[firstline=55, lastline=134]{src/4/1174086/teoricsv1174086.py}
+	\item untuk membuka file csv, cari file yang anda simpan tadi
+	\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=10cm,height=10cm]{figures/4/1174079/Teori/bukafilecsv.png}
+	\caption{Menyimpan CSV}
+	\label{penanda}
+	\end{figure}
 
+\end{itemize}
+
+\item Jelaskan sejarah library csv
+
+CSV (Comma separated Values) adalah format data yang telah ada sebelum personal komputer hadir 10 tahun sebelumnya, CSV file pada tahun 1972 telah didukung oleh IBM Fortran, nama CSV sendiri mulai digunakan pada tahun 1983, menggunakan koma dan spasi sebagai pembatas, jadi karakter string yang tidak dikutip tidak bisa mengandung koma atau spasi, list CSV lebih mudah untuk diketik daripada data yang diatur berdasarkan kolum, dan lebih terhindar dari hasil yang salah jika di cetak pada media seperti punched card
+
+
+\item Jelaskan sejarah library pandas
+
+Pandas (Python Data Analysis Library) nama ini didapat dari istilah panel data dan juga istilah econometrik untuk data terstruktur multidimensi, Developer Wes McKinney mulai mengerjakan pandas pada tahun 2008, ketika saat AQR capital management sedang membutuhkan alat yang memiliki performa tinggi untuk melakukan analysis kuantitif tentang data finansial, sebelum keluar dari AQR, dia bisa membuat management percaya untuk supaya dia bisa membuat library open source. Chang She, bergabung pada tahun 2012 sebagai kontributor ke 2 untuk library pandas.
+
+
+\item Jelaskan fungsi-fungsi yang terdapat di library csv
+\begin{itemize}
+
+	\item fungsi open di CSV
+	
+	Digunakan untuk membuka dan membaca file csv
+	\lstinputlisting[firstline=10, lastline=20]{src/4/1174079/Teori/contohcsvchandra.py}
+
+	\item fungsi write di csv
+	
+	Digunakan untuk menulis data ke file csv menggunakan writerow
+	\lstinputlisting[firstline=7, lastline=12]{src/4/1174079/Teori/contohcsvwrite.py}
+	
+	\item fungsi write dengan parameter di csv
+	
+	Digunakan untuk menulis data ke file csv menggunakan writerow
+	\lstinputlisting[firstline=7, lastline=14]{src/4/1174079/Teori/contohcsvwriteparameter.py}
+
+\end{itemize}
+
+\item Jelaskan fungsi-fungsi yang terdapat di library pandas
+\begin{itemize}
+
+	\item fungsi pandas read csv
+	
+	Digunakan untuk membuka, menganalisis, dan membaca file csv
+	\lstinputlisting[firstline=7, lastline=9]{src/4/1174079/Teori/pandasreadchandra.py}
+	
+	\item fungsi pandas to csv
+	Digunakan untuk menulis data ke file csv
+	\lstinputlisting[firstline=7, lastline=13]{src/4/1174079/Teori/pandaswritechandra.py}
+
+\end{itemize}
 
 \end{enumerate}
