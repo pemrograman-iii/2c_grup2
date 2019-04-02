@@ -194,4 +194,123 @@ Jelaskan bagaimana cara membuat fungsi yang menggunakan pyserial!\\
 Jawab :\\
 Definisikan nama fungsi dengan cara def namaFungsi(): lalu masukkan isi fungsi
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Fanny Shafira Damayanti | 1174069}
+\subsection{Pemahaman Teori}
+\begin{enumerate}
+\item Fungsi Device manager di Windows dan folder /dev di Linux
+
+Device Manager di Windows berfungsi untuk mengelola semua Hardware yang berada di Windows.
+
+Folder /dev berisikan file device pada Linux.
+
+\item Langkah-langkah Instalasi driver dari arduino
+
+\begin{itemize}
+\item Download Software Arduino IDE
+\item Hubungkan port USB Arduino ke port pc.
+\item setelah itu pc akan mendeteksi driver baru
+
+\begin{figure}[ht!]
+\includegraphics[width=5cm]{figures/5/1174069/1fny.png}
+\centering
+		\caption{Driver baru}
+\end{figure}
+	
+\item Buka device manager
+
+\begin{figure}[ht!]
+\includegraphics[width=5cm]{figures/5/1174069/2fny.png}
+\centering
+		\caption{Buka device manager}
+\end{figure}
+	
+	
+\item setelah itu, cari "Unknown device"
+
+\begin{figure}[ht!]
+\includegraphics[width=5cm]{figures/5/1174069/3fny.png}
+\centering
+		\caption{klik "unknown device"}
+\end{figure}
+	
+\item Klik kanan pada "Unknown device" lalu klik Update driver software
+
+\begin{figure}[ht!]
+\includegraphics[width=5cm]{figures/5/1174069/4fny.png}
+\centering
+		\caption{Klik update driver software}
+\end{figure}
+	
+\item Pilih Browse my computer for driver software
+
+\begin{figure}[ht!]
+\includegraphics[width=5cm]{figures/5/1174069/5fny.png}
+\centering
+		\caption{Pilih browse}
+\end{figure}
+	
+\item Cari folder installan Arduino nya
+
+\begin{figure}[ht!]
+\includegraphics[width=5cm]{figures/5/1174069/6fny.png}
+\centering
+		\caption{Cari folder instalasinya}
+\end{figure}
+	
+\item Lalu klik next
+
+
+	
+\item setelah itu klik install
+\begin{figure}[ht!]
+\includegraphics[width=5cm]{figures/5/1174069/7fny.png}
+\centering
+		\caption{install}
+\end{figure}
+
+\item Arduino telah berhasil di install
+
+\begin{figure}[ht!]
+\includegraphics[width=5cm]{figures/5/1174069/8fny.png}
+\centering
+\caption{selesai}
+\end{figure}
+	
+\end{itemize} 
+
+\item Cara membaca baudrate dan port dari komputer yang sudah terinstall driver
+
+Untuk membaca baudrate dan port yaitu dengan cara :
+\begin{itemize}
+\item menginstall Arduino IDE
+\item setelah itu buka menu serial monitor yang berada di tab tools
+\item lalu akan terlihat baudrate dan port yang sedang digunakan.
+\end{itemize}
+
+\item Sejarah library pyserial
+PySerial merupakan sebuah library yang digunakan untuk komunikasi ke port serial terutama untuk mikrokontroller. PySerial pertama kali diluncurkan pada tahun 2002 yang makin berkembang dalam setiap versinya hingga tahun 2017 lalu.
+
+\item Fungsi-fungsi yang di pakai dari libarary pyserial
+
+\begin{itemize}
+			\item \begin{verbatim}stop()\end{verbatim} : untuk menghentikan pembacaan program
+			\item \begin{verbatim}serial.to_bytes(sequence)\end{verbatim} : berfungsi untuk mengubah sequence ke dalam bytes agar dapat dikirim ke dalam arduino.
+			\item \begin{verbatim}close()\end{verbatim} : untuk menutup port dan menghentikan pembacaan program
+		\end{itemize}
+
+\item kenapa butuh perulangan dan tidak butuh perulangan dalam membaca serial
+
+Karena perulangan digunakan untuk membaca seluruh data pada serial yang ada setiap baris. Perulangan digunakan agar data dapat muncul secara terus menerus atau realtime. Sedangkan kalau tidak memakai perulangan, maka data hanya muncul satu kali, tidak berulang.
+
+\item Cara membuat fungsi menggunakan pyserial
+
+\lstinputlisting[firstline=7, lastline=14]{src/5/1174069/Teori/1174069_teori.py}
+
+\item Scan Plagiarisme
+\begin{figure}[ht!]
+\includegraphics[width=5cm]{figures/5/1174069/plagiarisme.png}
+\centering
+\caption{plagiarisme}
+\end{figure}
