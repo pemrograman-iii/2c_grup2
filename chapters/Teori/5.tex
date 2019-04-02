@@ -1,4 +1,4 @@
-\section{D. Irga B. Naufal Fakhri}
+﻿\section{D. Irga B. Naufal Fakhri}
 \subsection{Pemahaman Teori}
 \begin{enumerate}
 \item Device Manager pada Windows dan folder /dev pada Linux
@@ -723,3 +723,124 @@ Jelaskan bagaimana cara membuat fungsi yang mengunakan pyserial!
 	\caption{Kode program file 1174086.py.}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Chandra Kirana Poetra}
+\subsection{Pemahaman Teori}
+\begin{enumerate}
+\item Apa itu fungsi device manager di windows dan folder /dev di linux
+
+Device manager adalah suatu aplikasi kecil bagian dari control panel yang ada di sistem operasi windows, aplikasi ini membuat user bisa melihat dan mengontrol hardware yang terpasang ke komputer. ketika suatu hardware tidak bekerja, hardware yang terdeteksi akan terdapat notifikasi bagi user untuk ditangani. di deivce manager ini user bisa enable atau disable hardware, melihat informasi technical, dan lain lain. device manager sudah ada di windows sejak versi 95
+
+/dev di linux merupakan lokasi spesial atau tempat penyimpanan file file perangkat. didalamnya anda bisa menemukan hda1 dan hda2 yang merupakan partisi system, cdrom dan fd0 adalah drive CD-ROM dan juga floppy drive, dan lain lain.
+
+\item Jelaskan langkah-langkah instalasi driver dari arduino
+
+Download dari halaman sini dulu https://www.arduino.cc/en/main/software lalu ikuti saja langkah nya,
+langkah dibawah ini adalah langkah alternatif jika terjadi error, langkah ini akan menginstall driver arduino dari device manager
+	\begin{itemize}
+	\item Buka driver manager
+	\begin{figure}[ht!]
+		\includegraphics[width=5cm]{figures/5/1174079/DeviceManager.png}
+		\centering
+		\caption{Driver Manager}
+	\end{figure}
+	
+	\item Buka bagian port
+	\begin{figure}[ht!]
+		\includegraphics[width=5cm]{figures/5/1174079/7a.png}
+		\centering
+		\caption{Port}
+	\end{figure}
+
+	\item Klik Kanan lalu update driver
+	\begin{figure}[ht!]
+		\includegraphics[width=5cm]{figures/5/1174079/6a.png}
+		\centering
+		\caption{Instalasi}
+	\end{figure}
+
+	\item pilih Browse my computer\begin{figure}[ht!]
+		\includegraphics[width=5cm]{figures/5/1174079/5a.png}
+		\centering
+		\caption{browse my computer}
+	\end{figure}
+
+	\item Cari tempat driver berada, jika anda sebelumnya sudah menginstall arduino ide maka driver ada di folder instalasi arduino
+	\begin{figure}[ht!]
+		\includegraphics[width=5cm]{figures/5/1174079/4a.png}
+		\centering
+		\caption{Driver Arduino}
+	\end{figure}
+	
+	\item Klik next saja lalu pilih install
+	\begin{figure}[ht!]
+		\includegraphics[width=5cm]{figures/5/1174079/3a.png}
+		\centering
+		\caption{Install driver}
+	\end{figure}
+	\item Driver selesai terinstall 
+	\begin{figure}[ht!]
+		\includegraphics[width=5cm]{figures/5/1174079/2a.png}
+		\centering
+		\caption{Selesai}
+	\end{figure}
+	
+	\item Cek hasil instalasi
+	\begin{figure}[ht!]
+		\includegraphics[width=5cm]{figures/5/1174079/1a.png}
+		\centering
+		\caption{Result}
+	\end{figure}
+	\end{itemize}
+
+\item Jelaskan bagaimana cara membaca baudrate dan port dari komputer yang sudah terinstall driver
+
+Baudrate (bits per second) adalah suatu takaran yang digunakan untuk mengukur informasi yang akan di sampaikan atau dikirim dan cara membacanya sendiri adalah dengan cara membuka aplikasi arduino IDEnya lalu mengklik icon serial monitor. 
+Port sendiri bisa kita lihat di bagian device manager pada opsi port, tinggal dibuka saja dropdownnya maka akan tampil port number berapanya
+	
+\item Jelaskan sejarah library pyserial
+
+pySerial adalah modul yang digunakan untuk mengakses port, menyediakan backend untuk pyhton pada platform windwos, OSX, linux, BSD dan lain lain,  
+
+\item Jelaskan fungsi-fungsi apa saja yang dipakai dari library pyserial
+
+	\begin{itemize}
+	\item Serial()
+	
+	Berfungsi untuk mendefinisikan port, diikuti dengan parameter lainnya seperti baudrate, bytesize dan lain lain
+	
+	\item open()
+	
+	Berfungsi untuk membuka port
+	
+	\item close()
+	
+	Berfungsi untuk Menutup port
+	
+	\item write(data)
+	
+	Berfungsi untuk menulis data berdasarkan parameter
+	
+	\item flush()
+	
+	Operasi Flush memaksa data file untuk dikirim ke file cache di ram dan disana akan dialihkan ke sistem operasi untuk dikirimkan ke disk datayang akan di simpan
+	\end{itemize}
+
+\item Jelaskan kenapa butuh perulangan dan tidak butuh perulangan dalam membaca serial
+
+Perulangan sendiri merupakah kode/perintah yang digunakan untuk melakukan suatu kegiatan/tujuan yang sama secara berulang ulang.  for dan while adalah perulangan dalam pyhton.
+For dan while merupakan perulangan namun memiliki fungsi yang berbeda, for menggunakan perhitungan dalam penggunaannya jadi kode akan dieksekusi sesuai dengan jumlah yang telah ditentukan, sedangkan while akan terus mengulang perintah-perintahnya ketika kondisi masih sesuai dengan apa yang ditulis di kondisi
+Mengapa diperlukan perulangan? Karena kode program akan menjadi lebih sederhana dibandingkan dengan cara manual satu persatu dan juga lebih efficient dengan meminimalisir baris kode
+
+\item Jelaskan bagaimana cara membuat fungsi yang mengunakan pyserial
+
+Membuat fungsi sama seperti sebelumnnya namun method dari pyserial dimasukkan kedalam fungsi dan dipanggil fungsi yang kita buat tadi
+\lstinputlisting[firstline=7, lastline=14]{src/5/1174079/Teori/1174079.py}
+
+\item Scan Plagiarisme
+\begin{figure}[ht!]
+	\includegraphics[width=5cm]{figures/5/1174079/plagiat.png}
+	\centering
+	\caption{Plagiarisme}
+\end{figure}
+\end{enumerate}
