@@ -314,3 +314,138 @@ Karena perulangan digunakan untuk membaca seluruh data pada serial yang ada seti
 \centering
 \caption{plagiarisme}
 \end{figure}
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Aulyardha Anindita | 1174054}
+\subsection{Pemahaman Teori}
+\begin{enumerate}
+
+\item Fungsi Device Manager dan folder /dev
+\begin{itemize}
+\item Fungsi Device Manager\\
+Device manager dalam windows merupakan perluasan dari microsoft management console. Device manager mampu menampilkan seluruh hardware yang bisa di inisialisasi (dikenali) oleh windows. Device manager disini memiliki beberapa fungsi diantaranya :\\
+a.	Menunjukkan status suatu hardware\\
+b.	Menunjukkan informasi detail suatu hardware\\
+c.	Mengelola driver hardware\\
+d.	Disable dan enable hardware\\
+e.	Memberikan pesan error terjadinya problem status device\\
+\item Fungsi Folder /dev\\
+Folder/dev adalah suatu representasi dari drive yang terhubung ke dalam sistem operasi linux dan sistem mengganggapnya sebagai file-file direktori. Biasanya sering ditampilkan direktori seperti /dev/sdal yang mewakili Drive SATA pertama dalam sistem.
+\end{itemize}
+
+\item Langkah-langkah instalasi driver dari arduino
+\begin{itemize}
+\item Pertama, download dan instal terlebih dahulu Arduino IDE
+
+\item Hubungkan port USB Arduino UNO ke Port USB PC, maka PC akan mendeteksi keberadaan perangkat baru dan akan muncul pop up berupa pesan install device driver software. Seperti pada gambar berikut :
+\begin{figure}[ht!]
+\includegraphics[width=5cm]{figures/5/1174054/1.png}
+\centering
+\caption{Setup}
+\end{figure}
+
+\item Dalam Windows tidak menyediakan menyediakan driver untuk Arduino Uno seperti yang terlihat pada gambar dibawah ini, sehingga proses instalasinya harus dilakukan secara manual.
+\begin{figure}[ht!]
+\includegraphics[width=5cm]{figures/5/1174054/2.png}
+\centering
+\caption{Instalasi}
+\end{figure}
+
+\item Selanjutnya, buka start windows kemudian ketikkan device manager lalu tekan enter, maka akan muncul device manager. Klik untuk menjalankan. Seperti pada gambar berikut :
+\begin{figure}[ht!]
+\includegraphics[width=5cm]{figures/5/1174054/3.png}
+\centering
+\caption{Search Device Manager}
+\end{figure}
+
+\item Kemudian Carilah Unknown device pada bagian Other device, biasanya terdapat tanda seru berwarna kuning hal itu disebabkan karena penginstallan tidak berjalan dengan sempurna.
+\begin{figure}[ht!]
+\includegraphics[width=5cm]{figures/5/1174054/4.png}
+\centering
+\caption{Unknown Device}
+\end{figure}
+
+\item Klik kanan pada “Unknown device” kemudian pilih Update Driver Software
+\begin{figure}[ht!]
+\includegraphics[width=5cm]{figures/5/1174054/5.png}
+\centering
+\caption{Update Driver Software}
+\end{figure}
+
+\item Pilih Browse my computer for driver software
+\begin{figure}[ht!]
+\includegraphics[width=5cm]{figures/5/1174054/6.png}
+\centering
+\caption{Mencari folder untuk driver software}
+\end{figure}
+
+\item  Arahkan lokasi folder ke folder arduino kemudian checkbox lalu centang include subfolders. setelah itu, Klik Next untuk melanjutkan instalasi driver.
+\begin{figure}[ht!]
+\includegraphics[width=5cm]{figures/5/1174054/7.png}
+\centering
+\caption{Lokasi folder}
+\end{figure}
+
+\item Kemudian lanjutkan dengan mengklik Install pada tampilan Windows Security
+\begin{figure}[ht!]
+\includegraphics[width=5cm]{figures/5/1174054/8.png}
+\centering
+\caption{Install PAda tampilan WIndows Security}
+\end{figure}
+
+\item Jika instalasi driver berhasil maka akan muncul Windows has successfully updated your driver software.
+\begin{figure}[ht!]
+\includegraphics[width=5cm]{figures/5/1174054/9.png}
+\centering
+\caption{Pesan Peringatan Berhasil}
+\end{figure}
+
+\item Perhatikan dan ingat nama COM Arduino Uno, karena nama COM ini yang akan digunakan untuk meng-upload program nantinya
+\begin{figure}[ht!]
+\includegraphics[width=5cm]{figures/5/1174054/10.png}
+\centering
+\caption{Peringatan COM Arduino Uno}
+\end{figure}
+
+\end{itemize}
+
+\item Cara Membaca Baudrate dan Port
+
+Cara membaca baudrate yaitu dengan membuka arduino ide yang telah diinstal lalu klik serial monitor dimana iconnya seperti kaca pembesar (cari).
+
+Cara membaca port yaitu dengan melalui device manager pada bagian port yang terdapat tulisan COMXX dimana itu adalah portnya.
+
+\item Sejarah Library Pyserial\\
+PySerial merupakan sebuah library yang digunakan untuk komunikasi ke port serial terutama untuk mikrokontroller. PySerial pertama kali diluncurkan pada tahun 2002 yang makin berkembang dalam setiap versinya hingga tahun 2017 lalu. 
+
+PySerial menyediakan antarmuka untuk berkomunikasi
+melalui protokol komunikasi serial. Komunikasi serial adalah salah satu protokol komunikasi komputer tertua. Protokol komunikasi serial mendahului spesifikasi USB
+yang digunakan oleh komputer dan perangkat keras lain seperti mouse, keyboard,dan webcam. USB adalah singkatan dari Universal Serial Bus. USB dan dibangun di atas dan memperluas antarmuka komunikasi serial asli.
+
+\item Fungsi-fungsi pada Library Pyserial
+\begin{itemize}
+\item Serial(), berfungsi untuk membuka port serial
+\item Write(), berfungsi untuk menulis data lewat port serial
+\item readline(size), berfungsi untuk membaca sebuah string dari port serial
+\item read(size), berfungsi untuk membaca jumlah byte dari port serial
+\item close(), berfungsi untuk menutup port serial
+\end{itemize}
+
+\item Mengapa butuh perulangan dan tidak butuh perulangan dalam membaca serial\\
+Ketika kita akan membaca serial di Arduino diperlukan perulangan yang berfungsi untuk membaca data secara berulang kali sehingga data yang muncul banyak. Sedangkan apabila tidak membutuhkan perulangan maka Arduino hanya akan membaca data satu kali saja.
+
+\item Cara Membuat fungsi menggunakan Pyserial
+\lstinputlisting[firstline=8, lastline=15]{src/5/1174054/Teori/1174054.py}
+
+\item Cek Plagiarisme
+\begin{figure}[ht!]
+\includegraphics[width=5cm]{figures/5/1174054/plagiarisme.png}
+\centering
+\caption{Plagiarisme}
+\end{figure}
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
