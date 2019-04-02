@@ -449,3 +449,86 @@ Ketika kita akan membaca serial di Arduino diperlukan perulangan yang berfungsi 
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Nurul Izza Hamka | 1174062 | Teori}
+\begin{enumerate}
+
+\item Fungsi Device Manager di Windows dan Folder / Dev di Linux 
+Device manager ini adalah untuk menampilkan semua hardware yang bisa dikenali oleh windows, tampilan di device manager ini sudah dikelompokkan dengan rapi serta teratur,dengan adanya device manager ini akan sangat membantu dalam memanajemen setiap hardware yang ada dalam windows. \\
+Fungsi dari device manager ini adalah seperti :\\
+1. Mengelola setiap driver didalam hardware,\\
+2. Mengidentifikasi konfik yang terjadi dalam hardware,\\
+3. Menunjukka setiap informasi secara detail suatu hardware,\\
+4. Menampilkan status dalam hardware.\\
+Sedangka pada Linux ia melihat hardware apa saja yang yang telah terpasang melalui command dan terminal ataupun secara Visual.
+
+\item Langkah-Langkah Instalasi Driver dari Arduino : \\
+Adapun langkah-langkah dalam menginstal arduino di Windows :\\
+\begin{enumerate}
+\item Pertama Hubungkan Port USB arduino UNO ke komputer atau Laptop,
+	\item Setelah terhubung, laptop akan mengindentifikasi terlebih dahulu,
+	\begin{figure}[ht!]
+	\includegraphics[width=5cm]{figures/5/1174062/1.jpg}
+	\centering
+	\end{figure}
+	\item Selanjutnya windows akan menginstall di driver,pastikan device manager kita telah terinstall,
+	\begin{figure}[ht!]
+	\includegraphics[width=5cm]{figures/5/1174062/2.png}
+	\centering
+	\end{figure}
+	\item Di device manager padsa bagian Ports, akan muncul nama baru yaitu Arduino UNO,
+	\item Klik kanan Arduino Uno tersebut kemudian pilih Update Driver Software, 
+	\begin{figure}[ht!]
+	\includegraphics[width=5cm]{figures/5/1174062/4.png}
+	\centering
+	\end{figure}
+	\item Setelah itu Browser my Computer for driver software,lalu klik Next untuk install
+	\begin{figure}[ht!]
+	\includegraphics[width=5cm]{figures/5/1174062/5.png}
+	\centering
+	\end{figure}
+	\item Jika berhasil, berarti Arduino telah berhasil di install.
+	\begin{figure}[ht!]
+	\includegraphics[width=5cm]{figures/5/1174062/7.png}
+	\centering
+	\end{figure}
+\end{enumerate}
+	
+
+\item Cara membaca baudrate dan Port dari Komputer yang telah Terinstall Driver: \\
+1. Buka device manager,\\
+2. Pilih port (COM \& LPT),\\
+3. Kemuadian double klik yang COM,\\
+4. Pilih tab yang Port Setting, dan lihat pada Bit per Second,\\
+
+Kemudian Cara Membaca Port Dari Komputer :
+1. Buka device manager,\\
+2. Pilih port (COM \& LPT),\\
+3. Selanjutnya akan muncul jika port arduino telah terbaca oleh PC.\\
+
+\item Sejarah Library Pyserial:
+Pyserial adalah perpustakaan yang meyediakan  dukungan untuk sebuah koneksi serial "RS-232" melalui berbagi perangkat yang berbeda. Pyserial ini adalah paket python yang mempasilitasi komunikasi serial antara Pc dengan perngkat keras eksternal. Pyserial ini menyediakan interface yang dapat digunakan untuk berkomunikasi melalui protokol komunikasi serial. 
+
+\item Fungsi-Fungsi Yang Dipakai Dari Library Pyserial:
+1. Serial,digunakan untuk membuka port serial,\\
+2. Write(data), digunakan untuk menulis data lewat port serial,\\
+3. Readline(),digunakan untuk membaca sebuah string dari port serial,\\
+4. Read(size),digunakan untuk membaca jumlah byte dari port serial,\\
+5. Close(),digunakan untuk menutup port serial.\\
+
+\item Kenapa Butuh Perulangan dan Tidak Butuh Perulangan Dalam Membaca Serial:
+
+ketika membaca serial pada arduino maka akan dibutuhkan perulangan untuk bisa membaca setiap data secara berulang, sehingga data-data yang muncul bisa banyak. \\
+Sedangkan jika kita tidak membutuhkan perulangan maka Arduino hanya akan membaca data sekali saja. 
+
+\item Bagaimana Cara Membuat Fungsi Yang Menggunakan pyserial.
+
+\item Plagiarisme
+	\begin{figure}[ht!]
+	\includegraphics[width=5cm]{figures/5/1174062/8.png}
+	\centering
+	\end{figure}
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
