@@ -404,3 +404,94 @@ Cara kerja dari fungsi hist yaitu fungsi hist akan menerima parameter yang diber
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Aulyardha Anindita | 1174054}
+\subsection{Pemahaman Teori}
+
+\begin{enumerate}
+
+\item Fungsi Library Matplotlib\\
+Matplotlib adalah salah satu modul dalam python yang digunakan untuk menggambar plot 2D dengan dengan kualitas yang tinggi. Dengan matplotlib, kita dapat membuat plots, histograms, spectra, bar charts, errorchards, scatterplots, dan masih banyak lagi. Matplotlib adalah salah satu library paling banyak digunakan oleh data science untuk menyajikan datanya ke dalam visual yang lebih baik.
+
+\item Langkah-langkah membuat sumbu x dan y di Matplotlib
+\begin{itemize}
+\item Buka spyder terlebih dahulu
+\item Import matplotlib
+\item Selanjutnya, buat x dan y. x merupakan sumbu horizontal dan y merupakan sumbu vertikal.
+\item Isi sumbu x dan y sesuai dengan data yang dinginkan
+\item Jangan lupa untuk memberikan perintah show untuk menampilkan grafiknya
+\end{itemize}
+Contoh :\\
+\lstinputlisting[firstline=8, lastline=16]{src/6/1174054/Teori/1174054.py}
+
+
+\item Perbedaan fungsi dan cara pakai untuk berbagai jenis plot di Matplotlib
+\begin{itemize}
+\item Line, Line berfungsi untuk membuat grafik sederhana yang digambar menggunakan garis biasa. Cara penggunaannya yaitu dengan menggunakan plt.plot. Untuk lebih jelasnya seperti berikut:\\
+\lstinputlisting[firstline=28, lastline=33]{src/6/1174054/Teori/1174054.py}
+
+\item Bar, Bar berfungsi untuk membuat grafik yang biasanya berbentuk kolom dan terkadang disusun baik secara vertikal maupun horizontal. Cara penggunaannya yaitu dengan menggunakan plt.bar seperti dibawah ini :
+\lstinputlisting[firstline=18, lastline=26]{src/6/1174054/Teori/1174054.py}
+
+\item Histogram, Histogram berfungsi untuk membuat grafik yang biasanya berbentuk batang. Cara penggunaannya yaitu dengan menggunakan plt.hist seperti dibawah ini :
+\lstinputlisting[firstline=35, lastline=43]{src/6/1174054/Teori/1174054.py}
+
+\item Scatt, Scatt berfungsi untuk membuat grafik yang biasanya berbentuk titik yang menggambarkan hubungan atau korelasi antara dua pasangan/variabel. Cara penggunaanya yaitu dengan menggunakan plt.scatter seperti dibawah ini :
+\lstinputlisting[firstline=45, lastline=57]{src/6/1174054/Teori/1174054.py}
+
+\item Stack Plot, berfungsi untuk membuat grafik garis yang hampir sama dengan line tetapi memiliki fill color sehingga antar line bisa berdekatan. Cara penggunaannya yaitu dengan menggunakan plt.stackplot seperti dibawah ini :
+\lstinputlisting[firstline=59, lastline=75]{src/6/1174054/Teori/1174054.py}
+
+\item Pie, berfungsi untuk membuat grafik yang biasanya berbentuk lingkaran. Cara penggunaannya yaitu dengan menggunakan plt.pie seperti dibawah ini :
+\lstinputlisting[firstline=77, lastline=95]{src/6/1174054/Teori/1174054.py}
+
+\end{itemize}
+
+\item Cara Menggunakan Legend dan Label\\
+Legend biasanya digunakan untuk mempermudah dalam membaca suatu grafik karena berisi isi dari grafik tersebut seperti nama, dan lain sebagainya. Sedangkan pada label biasanya digunakan untuk membedakan nama titik X dan titik Y. Untuk cara penggunannya seperti dibawah ini :\\
+\lstinputlisting[firstline=22, lastline=24]{src/6/1174054/Teori/1174054.py}
+
+\item Fungsi, Cara Kerja, Ilustrasi dan Parameter Pada Subplot\\
+\begin{itemize}
+\item Fungsi dari Subplot adalah mampu membuat grafik lebih dari satu dalam sebuah program
+\item Cara Kerja dari Subplot bisa dilihat pada list berikut :\\
+\lstinputlisting[firstline=97, lastline=108]{src/6/1174054/Teori/1174054.py}
+\item Untuk parameternya sendiri disini saya menggunakan x dan y dimana x sebagai koordinat x dan y sebagai koordinat y.
+\end{itemize}
+\begin{figure}[H]	
+    \includegraphics[width=5cm]{figures/6/1174054/Teori/subplot.png}
+    \centering
+    \caption{Subplot Dita}
+\end{figure}
+
+\item Parameter Color
+\begin{itemize}
+\item R Untuk warna merah
+\item G Untuk warna hijau
+\item B Untuk warna biru
+\item W untuk warna putih
+\item Y Untuk warna kuning
+\item C Untuk warna cyan atau biru muda
+\item M Untuk warna magenta
+\item K Untuk warna hitam
+\end{itemize}
+
+\item Cara Kerja dan Ilustrasi Fungsi Hist\\
+Cara Kerja fungsi hist ini memiliki kedua titik koordinat dimana jika nilai x misalnya adalah 9 sedangkan nilai y adalah 3 itu tidak akan terjadi masalah karena diagram ini digunakan untuk mendata data yang memiliki rentang waktu tertentu.
+\begin{figure}[H]	
+    \includegraphics[width=5cm]{figures/6/1174054/Teori/histogram.png}
+    \centering
+    \caption{Histogram Dita}
+\end{figure}
+
+\item Parameter dari fungsi Pie
+\begin{itemize}
+\item Label, digunakan untuk mempermudah pembaca dalam membaca diagram pie
+\item Color, digunakan untuk memberikan style atau mempermudah membaca data karena data nya yang berbeda
+\item Startangle, digunakan sebagai sudut untuk memulai diagram pie
+\item Shadow, digunakan untuk membuat bayangan dari diagram pie sehingga datanya terlihat menonjol
+\item Explode, digunakan untuk mengeluarkan sebuah data sehingga data tersebut dapat terlihat menonjol
+\item Autopct, digunakan sesuai dengan berapa angka dibelakang koma yang kita inginkan.
+\end{itemize}
+
+\end{enumerate}
