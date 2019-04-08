@@ -118,3 +118,115 @@ Cara penggunaannya sebagai contoh saya ambil plt.subplot(221), pada angka 2 yang
     Autopct digunakan menyesuaikan berapa angka yang ada dibelakang koma
 \end{itemize}
 \end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Fanny Shafira Damayanti | 1174069}
+\subsection{Pemahaman Teori}
+\begin{enumerate}
+\item Fungsi Library matplotlib
+
+matplotlib adalah librari plotting 2D Python yang menghasilkan gambar publikasi bermutu di dalam berbagai format hardcopy dan lingkungan interaktif sepanjang platform. matplotlib dapat digunakan di dalam script Python, shell Python dan ipython.
+
+\item Langkah - langkah membuat sumbu X dan Y di matplotlib
+
+caranya yaitu seperti contoh dibawah ini :
+\lstinputlisting[firstline=9, lastline=10]{src/6/1174069/Teori/1174069_teori.py}
+
+\item Perbedaan fungsi dan cara pakai untuk berbagai jenis (bar, histogram, scatter,dll) jenis plot di matplotlib
+
+Perbedaannya adalah bentuk bentuk grafik yang akan di tampilkan sesuai dengan perintah yang digunakan pada pemogramannya.
+
+cara pengguna plot tersebut sebagai berikut :
+
+\begin{itemize}
+    \item line
+    Perintah yang digunakan untuk membuat grafik line sebagai berikut.
+    \lstinputlisting[firstline=12, lastline=14]{src/6/1174069/Teori/1174069_teori.py}
+	
+    \item bar
+    Memiliki koordinat X dan Koordinat Y
+	\lstinputlisting[firstline=16, lastline=25]{src/6/1174069/Teori/1174069_teori.py}
+    
+    \item histogram
+    Dalam penggunaan plot histogram titik x nya bisa tidak sama dengan titik Y.
+    \lstinputlisting[firstline=27, lastline=34]{src/6/1174069/Teori/1174069_teori.py}
+   
+    \item scatter
+   Penggunaan plot scatter atau bisa juga di bilang diagram titik.
+   \lstinputlisting[firstline=36, lastline=49]{src/6/1174069/Teori/1174069_teori.py}
+    
+    \item Stack plot
+    Untuk penggunaan stack plot ini seperti diagram line, tapi ada fill colornya,jadi antar line itu bisa berdekatan.
+	\lstinputlisting[firstline=82, lastline=92]{src/6/1174069/Teori/1174069_teori.py}
+    
+\end{itemize}
+
+\item Cara menggunakan legend dan label serta kaitannya dengan fungsi tersebut
+
+Legend digunakan untuk mempermudah dalam membaca grafik, legend itu sendiri berisi info info dari grafik yang ada seperti nama, kemudian bentuk dan warna.
+kemudian untuk label itu sendiri digunakan untuk membedakan nama titik X dan titik Y.
+
+Contohnya sebagai berikut :
+\lstinputlisting[firstline=20, lastline=22]{src/6/1174069/Teori/1174069_teori.py}
+
+\item Fungsi dari subplot di matplotlib, dan cara kerja dari fungsi subplot sertakan contoh gambarnya
+
+fungsi subplot di matplotlib yaitu untuk bisa membuat lebih dari 1 grafik dalam sebuah program.
+Contohnya :
+\lstinputlisting[firstline=94, lastline=104]{src/6/1174069/Teori/1174069_teori.py}
+
+\begin{figure}[H]	
+    \includegraphics[width=5cm]{figures/6/1174069/Teori/chart.png}
+    \centering
+    \caption{SubPlot}
+\end{figure}
+
+\item Paramater color yang bisa digunakan
+
+\begin{itemize}
+    \item Tipe Warna RGB
+
+    R untuk warna Red atau Merah
+    G untuk warna Green atau Hijau
+    B untuk warna Blue atau Biru
+    \item Tipe warna CMYK
+
+    C untuk warna Cyan atau Biru Muda
+    M untuk warna Mangenta atau Merah Tua
+    Y untuk warna Yellow Atau Kuning
+    K untuk warna black atau Hitam
+\end{itemize}
+
+\item Cara kerja dari fungsi hist, sertakan ilustrasi dan gambar sendiri
+
+Untuk fungsi histogram ini kedua titik koordinat boleh tidak sama. Misalnya x nya ada 10 nilai sedangkan Y nya ada 5 nilai, itu tidak akan jadi masalah karena diagram ini digunakan untuk mendata usia dari rentang tertentu atau kebutuhan lainnya.
+Contoh penggunaan histogram :
+\lstinputlisting[firstline=27, lastline=34]{src/6/1174069/Teori/1174069_teori.py}
+
+Contoh grafiknya :
+\begin{figure}[H]	
+    \includegraphics[width=5cm]{figures/6/1174069/Teori/histogram.png}
+    \centering
+    \caption{Diagram Histogram}
+\end{figure}
+
+\item Parameter dari fungsi pie diantaranya labels, colors, startangle, shadow, explode, autopct
+
+\begin{itemize}
+    \item label
+    Label digunakan untuk mempermudah pembaca dalam membaca diagram pie
+    \item color
+    warna digunakan untuk membedakan antar data
+    \item startangle
+    Digunakan untuk sudut yang digunakan untuk memulai diagram pie tersebut
+    \item shadow
+    bayangan digunakan untuk membuat bayangan dari setiap diagram pie yang menonjol
+    \item explode
+    explode digunakan untuk mengeluarkan suatu data agar data tersebut terlihat menonjol
+    \item autopct
+    Digunakan sesuai dengan berapa angka dibelakang koma yang kita inginkan
+\end{itemize}
+
+\end{enumerate}
+
