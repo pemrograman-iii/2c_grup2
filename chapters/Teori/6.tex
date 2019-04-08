@@ -1,0 +1,120 @@
+\section{D. Irga B. Naufal Fakhri}
+\subsection{Pemahaman Teori}
+\begin{enumerate}
+\item Apa itu fungsi library matplotlib
+
+	Matplotlib adalah modul python untuk menggambar plot 2D dengan kualitas tinggi. matplotlib dapat digunakan dalam script python, interpreter python dan ipython, server, dan 6 GUI toolkit. matplotlib berusaha untuk membuat segalanya jadi mudah, dan yang tadinya seperti tidak menjadi mungkin untuk dilakukan. Dengan matplotlib, Anda dapat membuat plots, histograms, spectra, bar charts, errorchards, scatterplots, dan masih banyak lagi.
+
+\item Jelaskan langkah-langkah membuat sumbu X dan Y di matplotlib
+\begin{enumerate}
+	\item pertama import dulu library matplotlib lalu beri alias plt
+	\lstinputlisting[firstline=7, lastline=7]{src/6/1174066/Teori/1174066.py}
+	
+	\item Kemudian buat variable array x dengan isi terserah anda
+	\lstinputlisting[firstline=8, lastline=8]{src/6/1174066/Teori/1174066.py}
+	
+	\item Lalu buat variable array y juga dengan isi terserah anda yang penting jumlahnya sama dengan variable X
+	\lstinputlisting[firstline=9, lastline=9]{src/6/1174066/Teori/1174066.py}
+	
+	\item Kemudian buat plot berisikan variable x dan y pada modul plt
+	\lstinputlisting[firstline=10, lastline=10]{src/6/1174066/Teori/1174066.py}
+	
+	\item Yang terakhir, munculkan plot yang telah kita buat dengan fungsi show()
+	\lstinputlisting[firstline=11, lastline=11]{src/6/1174066/Teori/1174066.py}
+\end{enumerate}
+
+\item Jelaskan bagaimana perbedaan fungsi dan cara pakai untuk berbagai jenis(bar,histogram,scatter,line dll) jenis plot di matplotlib
+
+	Perbedaan pada fungsi plot adalah pada bentuk gambar grafik yang dihasilkan pada program dan jenis jenis grafik yang ada pada plot adalah:
+\begin{itemize}
+	\item Plot
+		
+	Grafik yang dihasilkan oleh plot ini adalah sebuah garis (line)
+	\lstinputlisting[firstline=7, lastline=11]{src/6/1174066/Teori/1174066.py}
+	
+	\item Bar
+	
+	Grafik yang dihasilkan oleh bar adalah sebuah bentuk grafik batang (bar) dan cara penggunaan bar adalah menggunakan fungsi bar(variable x, variable y)
+	\lstinputlisting[firstline=14, lastline=18]{src/6/1174066/Teori/1174066.py}
+	
+	\item Histogram
+	
+	Dalam penggunaaan histogram yaitu menggunakan .hist(variable x, variable y) dengan variable x berisikan data dan variable y berisikan keliapatan yang akan dimunculkan pada histogram
+	\lstinputlisting[firstline=21, lastline=24]{src/6/1174066/Teori/1174066.py}
+	
+	\item Scatter
+	
+	Grafik yang dihasilkan oleh scatter adalah diagram titik dan cara penggunaannya menggunakan .scatter(variable x, variable y)
+	\lstinputlisting[firstline=27, lastline=39]{src/6/1174066/Teori/1174066.py}
+	
+	\item Stack Plot
+	
+	Grafik yang dihasilkan oleh stack plot ini hampir sama seperti diagram line, hanya hasil datanya disatuin semua keatasnya dan cara penggunaannya adalah menggunakan .stackplot(variable, variable, variable)
+	\lstinputlisting[firstline=41, lastline=58]{src/6/1174066/Teori/1174066.py}
+\end{itemize}
+
+\item Jelaskan bagaimana cara menggunakan legend dan label serta kaitannya dengan fungsi tersebut
+
+	Cara menggunakan legend adalah namaObject.legend() dan menambahkan labelnya seperti dibawah ini:
+\lstinputlisting[firstline=54, lastline=58]{src/6/1174066/Teori/1174066.py}
+Penggunaan legend itu berfungsi untuk memudahkan kita ketika membaca grafik yang kita hasilkan karena kita memberi nama pada data yang ditampilkan sama seperti label kita memberikan nama kepada variable yang dimunculkan di grafik dan membedakan antara variable yang satu dengan yang lain, kita juga bisa menambahkan warna ke label
+
+\item Jelaskan apa fungsi dari subplot di matplotlib, dan bagaimana cara kerja dari fungsi subplot, sertakan ilustrasi dan gambar sendiri dan apa parameternya jika ingin menggambar plot dengan 9 subplot di dalamnya
+
+	Subplot berfungsi untuk menampikan grafik plot pada program yang sama, cara penggunaannya:
+\lstinputlisting[firstline=60, lastline=70]{src/6/1174066/Teori/1174066.py}
+Cara penggunaannya sebagai contoh saya ambil plt.subplot(221), pada angka 2 yang pertama adalah pembagian keatas kalo kita mau bagi 3 keatas kita isi angka pertama dengan 3, angka 2 yang kedua adalah pembagian kesamping penggunaannya sama kaya angka pertama kalo kita mau ngebagi kesamping 4 kita isi angka kedua 4, dan angka 1 pada angka ketiga itu tempat disimpannya grafik yang akan dimunculkan
+
+\item Sebutkan semua parameter color yang bisa digunakan (contoh: m,c,r,k,... dkk)
+
+	Parameter warna yang bisa digunakan dibagi menjadi 2 tipe:
+\begin{itemize}
+	\item RGB
+	
+	Untuk keterangannya sebagai berikut
+    R untuk warna Red atau Merah
+    G untuk warna Green atau Hijau
+    B untuk warna Blue atau Biru
+    
+    \item CMYK
+    
+    Untuk keterangannya sebagai berikut
+    C untuk warna Cyan atau Biru Muda
+    M untuk warna Mangenta atau Merah Tua
+    Y untuk warna Yellow Atau Kuning
+    K untuk warna Black atau Hitam
+\end{itemize}
+
+\item Jelaskan bagaimana cara kerja dari fungsi hist, sertakan ilustrasi dan gambar sendiri
+
+	Untuk histogram kita tidak boleh memiliki is variable x dan y yang sama. Misal x-nya ada 10 nilai sedangkan Y-nya ada 5 nilai, data tersebut tidak menjadi masalah karena pada histogram data yang dimunculkan adalah data rentang dari data variable y. Dan ini adalah contoh dari penggunaan histogram
+\lstinputlisting[firstline=82, lastline=87]{src/6/1174066/Teori/1174066.py}
+
+\item Jelaskan lebih mendalam tentang parameter dari fungsi pie diantaranya labels, colors, startangle, shadow, explode, autopct
+
+\begin{itemize}
+    \item Label
+    
+    Label digunakan untuk mempermudah pembaca yaitu memberikan nama pada variable di grafik
+    
+    \item Color
+    
+    Warna yang dimunculkan pada setiap data
+    
+    \item Startangle
+    
+    Startangle digunakan untuk sudut awal pada diagram pie tersebut
+    
+    \item Shadow
+    
+    Shadow(Bayangan) digunakan untuk membuat bayangan pada setiap diagram pie yang menonjol
+    
+    \item Explode
+
+    Explode digunakan untuk mengeluarkan suatu data agar data tersebut menjadi terlihat lebih menonjol
+    
+    \item Autopct
+    
+    Autopct digunakan menyesuaikan berapa angka yang ada dibelakang koma
+\end{itemize}
+\end{enumerate}
