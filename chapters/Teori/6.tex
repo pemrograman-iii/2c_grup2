@@ -658,3 +658,113 @@ Jawab :
 \end{itemize}
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Chandra Kirana Poetra}
+\subsection{Pemahaman Teori}
+\begin{enumerate}
+\item Apa itu fungsi library matplotlib?
+Matplotlib adalah suatu library plotting 2d berbasis pyhton yang membuat publikasi figure yang berkualitas berbentuk hardcopy dengan interaktivitas di berbagai platforms. Matplotlib bisa digunakan di script pyhton, iPyhton, jupyter, web application servers, dan toolkit graphical. matplotlib bisa membuat plot, histograms, power spectra, bar charts, errorcharts, scatterplots dan masih banyak lagi dengan hanya beberapa baris kode.
+
+\item Jelaskan langkah-langkah membuat sumbu X dan Y di matplotlib?
+\begin{enumerate}
+	\item Untuk pertama-tama Import terdahulu library matplotlib dan berikan alias librarymatplotlib agar mudah diingat
+	\lstinputlisting[firstline=8, lastline=8]{src/6/1174079/Teori/1174079.py}
+	
+	\item Kemudian buat variable array dengan nama X, isi sesuai keinginan
+	\lstinputlisting[firstline=9, lastline=9]{src/6/1174079/Teori/1174079.py}
+	
+	\item Kemudian buat variable array dengan nama X, isi sesuai keinginan dengan jumlah yang sama dengan variable array X
+	\lstinputlisting[firstline=10, lastline=10]{src/6/1174079/Teori/1174079.py}
+	
+	\item Kemudian kita panggil function plot yang akan diisi variable X dan Y
+	\lstinputlisting[firstline=11, lastline=11]{src/6/1174079/Teori/1174079.py}
+	
+	\item Terakhir, gunakan function show() untuk menampilkan apa yang telah kita buat
+	\lstinputlisting[firstline=12, lastline=12]{src/6/1174079/Teori/1174079.py}
+\end{enumerate}
+
+\item Jelaskan bagaimana perbedaan fungsi dan cara pakai untuk berbagai jenis(bar,histogram,scatter,line dll) jenis plot di matplotlib?
+
+	Perbedaan diagram diagram yang ada itu hanya pada bentuknya lalu jenis jenis grafik yang ada pada plot adalah:
+\begin{itemize}
+	\item Plot
+		
+	Merupakan Grafik berbentuk garis
+	\lstinputlisting[firstline=8, lastline=12]{src/6/1174079/Teori/1174079.py}
+	
+	\item Bar
+	
+	Bar adalah sebuah grafik berbentuk batang (bar) dan berikut cara penggunaanya
+	\lstinputlisting[firstline=15, lastline=19]{src/6/1174079/Teori/1174079.py}
+	
+	\item Histogram
+	
+	Histogram merupakan diagram yang mirip bentuknya seperti batang namun perbedaanya adalah hist(variableX,variableY) dimana variableY merupakan kelipatan yang akan dimunculkan
+	\lstinputlisting[firstline=21, lastline=24]{src/6/1174079/Teori/1174079.py}
+	
+	\item Scatter
+	
+	Scatter merupakan diagram grafik yang menghasilkan oleh scatter/penyebaran titik dan cara penggunaannya menggunakan .scatter(variable x, variable y)
+	\lstinputlisting[firstline=26, lastline=38]{src/6/1174079/Teori/1174079.py}
+	
+	\item Stack Plot
+	
+	Stackplot merupakan diagram grafik yang mirip seperti diagram line, hanya hasil datanya disatuin semua keatasnya dan cara penggunaannya adalah menggunakan .stackplot(variable, variable, variable)
+	\lstinputlisting[firstline=40, lastline=58]{src/6/1174079/Teori/1174079.py}
+\end{itemize}
+
+\item Jelaskan bagaimana cara menggunakan legend dan label serta kaitannya dengan fungsi tersebut
+
+Cara menggunakan legend dan label adalah dengan memanggil function xlabel,ylabel,title,dan legend yang ada di library matplotlib
+\lstinputlisting[firstline=53, lastline=58]{src/6/1174079/Teori/1174079.py}
+Pastikan legend yang dibuat berisi informasi yang informatif dan dapat membantu siapapun yang membaca grafiknya menjadi lebih mudah paham
+
+\item Jelaskan apa fungsi dari subplot di matplotlib, dan bagaimana cara kerja dari fungsi subplot, sertakan ilustrasi dan gambar sendiri dan apa parameternya jika ingin menggambar plot dengan 9 subplot di dalamnya
+
+Subplot berfungsi untuk menampikan grafik plot pada satu tempat, namun peletakannya seperti table, contoh kode:
+\lstinputlisting[firstline=60, lastline=80]{src/6/1174079/Teori/1174079.py}
+contoh saya akan menggunakan (331) 3 pertama merupakan X berarti dia ada ruang ke bawah 3, 3 ke dua merupakan Y jadi dia ada ruang 3 ke samping maka akan membentuk seperti table 3x3 yang dimana angka 1 merupakan letak dia akan disimpan 
+
+\item Sebutkan semua parameter color yang bisa digunakan (contoh: m,c,r,k,... dkk)
+
+	Ada 2 tipe parameter warna yang dapat digunakan diantaranya yaitu : 
+\begin{itemize}
+	\item RGB
+	Red, Green, Blue
+    \item CMYK
+    Cyan,Magenta,Yellow,Black
+\end{itemize}
+
+\item Jelaskan bagaimana cara kerja dari fungsi hist, sertakan ilustrasi dan gambar sendiri
+
+	Grafik histogram menampilkan nilai x dan y, namun Y disini berlaku sebagai nilai rentang, apabila menggunakan cara lain nilai X dan Y harus sama jumlahnya, nah di histogram ini tidak perlu dikarenakan Y menjadi rentang. Berikut contoh histogram
+\lstinputlisting[firstline=82, lastline=87]{src/6/1174079/Teori/1174079.py}
+
+\item Jelaskan lebih mendalam tentang parameter dari fungsi pie diantaranya labels, colors, startangle, shadow, explode, autopct
+
+\begin{itemize}
+    \item Label
+    
+    Label digunakan untuk memberi keterangan sehingga dapat mempermudah pembaca dengan menambahkan beberapa informasi mengenai grafik
+    
+    \item Color
+    
+    Warna 
+    
+    \item Startangle
+    
+    Startangle digunakan untuk sudut awal pada diagram pie tersebut
+    
+    \item Shadow
+    
+    Shadow(Bayangan) digunakan untuk membuat efek bayangan
+    
+    \item Explode
+
+    Gunakan Explode untuk membuat suatu data menjadi lebih menonjol
+    
+    \item Autopct
+    
+    Autopct digunakan untuk menyesuaikan berapa angka yang ada dibelakang koma seperti penggunaan uang
+\end{itemize}
+\end{enumerate}
