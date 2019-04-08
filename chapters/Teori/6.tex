@@ -296,11 +296,7 @@ Jelaskan bagaimana perbedaan fungsi dan cara pakai untuk berbagai jenis(bar, his
 	\item \textbf{Line Graph}
 	
 	Perbedaan line graph dengan jenis plot lain adalah line graph menampilkan diagram dalam bentuk garis.
-	
-	
-	
-	
-	
+		
 \end{enumerate}
 
 \subsubsection{Soal No. 4}
@@ -394,6 +390,7 @@ Cara kerja dari fungsi hist yaitu fungsi hist akan menerima parameter yang diber
 \hfill \break
  Jelaskan lebih mendalam tentang parameter dari fungsi pie diantaranya labels, colors, startangle, shadow, explode, autopct!
  
+ 
  \begin{itemize}
  	\item labels : untuk memberikan label di tiap persentase.
  	\item colors : untuk memberikan warna di tiap persentase.
@@ -402,6 +399,7 @@ Cara kerja dari fungsi hist yaitu fungsi hist akan menerima parameter yang diber
  	\item explode : untuk memisahkan antar tiap potongan pie pada plot.
  	\item autopct : untuk menentukan jumlah angka dibelakang koma.
  \end{itemize}
+ 
 
 
 
@@ -593,7 +591,7 @@ mengimbangi irisan dari pie.explode adalah vektor atau matriks nol dan nonzeros 
 irisan untuk elemen bukan nol hanya dalam explode .
 \item Autopct \\
 autopct memungkinkan Anda untuk menampilkan nilai persen menggunakan pemformatan string Python. Dengan Autopct dan Callable kita dapat melakukan hal lebih.
-
+\end{enumerate}
 \item Plagiarisme
 	\begin{figure}[ht!]
 	\includegraphics[width=5cm]{figures/6/1174062/plagiat.png}
@@ -601,3 +599,62 @@ autopct memungkinkan Anda untuk menampilkan nilai persen menggunakan pemformatan
 	\end{figure}
 
 \end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Difa Al Fansha}
+\subsection{Pemahaman Teori}
+\begin{enumerate}
+\item Apa itu fungsi library matplotlib\\
+Jawab :\\
+Python memiliki banyak library yang memudahkan para ilmuwan data / data scientist untuk menyelesaikan tugas-tugas rumit tanpa banyak gangguan pengkodean
+
+\item Jelaskan langkah-langkah membuat sumbu X dan Y di matplotlib\\
+Jawab :
+\lstinputlisting[firstline=2, lastline=11]{src/6/1174076/Teori/1174076.py}
+
+\item Jelaskan bagaimana perbedaan fungsi dan cara pakai untuk berbagai jenis(bar,histogram,scatter,line dll) jenis plot di matplotlib\\
+Jawab :
+\begin{itemize}
+\item Plot
+Hanya bisa menampilkan data yang berkelanjutan (continuous data). Jika Anda perlu mengetahui perubahan dari waktu ke waktu maka Line Chart sangat cocok untuk digunakan.
+\lstinputlisting[firstline=14, lastline=20]{src/6/1174076/Teori/1174076.py}
+\item Bar
+Grafik batang menggambarkan perbandingan antar beberapa item.
+\lstinputlisting[firstline=21, lastline=28]{src/6/1174076/Teori/1174076.py}
+\item Histogram
+sebuah representasi grafik yang menampilkan impresi visual dari distribusi data
+\lstinputlisting[firstline=29, lastline=35]{src/6/1174076/Teori/1174076.py}
+\end{itemize}
+
+\item Jelaskan bagaimana cara menggunakan legend dan label serta kaitannya dengan fungsi tersebut\\
+Jawab :
+\lstinputlisting[firstline=37, lastline=48]{src/6/1174076/Teori/1174076.py}
+
+\item Jelaskan apa fungsi dari subplot di matplotlib, dan bagaimana cara kerja dari fungsi subplot, sertakan ilustrasi dan gambar sendiri dan apa parameternya jika ingin menggambar plot dengan 9 subplot di dalamnya\\
+\lstinputlisting[firstline=50, lastline=74]{src/6/1174076/Teori/1174076.py}
+
+\item Sebutkan semua parameter color yang bisa digunakan (contoh: m,c,r,k,... dkk)\\
+Jawab :
+\begin{itemize}
+\item R untuk warna Red atau Merah
+\item G untuk warna Green atau Hijau
+\item B untuk warna Blue atau Biru
+\item C untuk warna Cyan atau Biru Muda
+\item M untuk warna Mangenta atau Merah Tua
+\item Y untuk warna Yellow Atau Kuning
+\item K untuk warna Black atau Hitam
+\end{itemize}
+
+\item Jelaskan bagaimana cara kerja dari fungsi hist, sertakan ilustrasi dan gambar sendiri\\
+Jawab :
+\lstinputlisting[firstline=29, lastline=35]{src/6/1174076/Teori/1174076.py}
+
+\item Jelaskan lebih mendalam tentang parameter dari fungsi pie diantaranya labels, colors, startangle, shadow, explode, autopct\\
+\begin{itemize}
+\item Label berfungsi untuk mempermudah dalam hal pembacaaan
+\item Colors warna setiap data
+\item Explode mengeluarkan suatu data agar data tersebut menjadi terlihat lebih menonjol
+\item Shadow untuk membuat bayangan pada setiap diagram pie yang menonjol
+\end{itemize}
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
