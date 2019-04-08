@@ -299,6 +299,8 @@ Jelaskan bagaimana perbedaan fungsi dan cara pakai untuk berbagai jenis(bar, his
 	
 	
 	
+	
+	
 \end{enumerate}
 
 \subsubsection{Soal No. 4}
@@ -493,5 +495,109 @@ Cara Kerja fungsi hist ini memiliki kedua titik koordinat dimana jika nilai x mi
 \item Explode, digunakan untuk mengeluarkan sebuah data sehingga data tersebut dapat terlihat menonjol
 \item Autopct, digunakan sesuai dengan berapa angka dibelakang koma yang kita inginkan.
 \end{itemize}
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Nurul Izza Hamka | 1174062 | Teori}
+\begin{enumerate}
+
+\item Fungsi Library Matplotlib\\
+
+Matplotlib adalah Library plotting dengan 2D pada Python yang dapat Menghasilkan sebuah gambar, 
+matplotlip ini paling banyak dingunakan oleh data science karena idalamnya terdapat berbagai format hardcopy dan sangat interaktif di flatformnya, 
+serta mampu menyajikan visual data yang lebih baik. \\
+dengan matplotlib kita dapat membuat sebuah plots,histograms, bar charts, spectra, daln lainnya.\\
+
+\item Langkah-langkah Membuat Sumbuh X dan Y di Matplotlib
+
+\begin{enumerate}
+\item Buat plot untuk sebuah garis
+\item Lakukan Import
+\lstinputlisting[firstline=7, lastline=16]{src/6/1174062/Teori/1174062.py}
+\end{enumerate}
+
+\item Bagaimana Perbedaan Fungsi dan Cara Pakai Untuk Berbagai Jenis Plot Di Matplotlip
+
+\begin{enumerate}
+\item Histogram \\
+Histogram menunjukkan frekuensi pada sumbu vertikal dan sumbu horizontal adalah dimensi lain. 
+Histogram Ini akan menampilkan sebuah frekuensi data dengan model batang , yang mana angka didalamnya di kelompokkan dalam rentang tertentu.
+\item Scatter\\
+Matplotlip memiliki fungsi  untuk membuat scatterplot yang disebut scatter (). 
+Plot scatter adalah jenis plot yang menunjukkan data sebagai kumpulan poin. Posisi suatu titik tergantung pada nilai dua dimensi, 
+di mana setiap nilai adalah posisi pada dimensi horizontal atau vertikal.
+\item Line\\
+Garis dapat memiliki kedua gaya garis padat yang menghubungkan semua simpul, dan penanda di setiap titik. 
+\end{enumerate}
+
+\item Bagaimana Cara Menggunakan Legend Dan Label Serta Kaitannya Dengan Fungsinya
+
+Formatting plot adalah suatu cara untuk memberikan sebuah informasi tentang label dan legend pada sebuah grafik dalam plot.\\
+Tambahkan label = ke masing-masing plot Anda () panggilan, dan kemudian panggil legenda (loc = 'kiri atas'). 
+dan kemudian memanggil kapak bukannya plt.gca (). Plot sederhana untuk kurva sinus dan cosinus dengan legend. 
+Kemudian cukup tambahkan Pyplot.legend () ke bagian bawah skrip Anda dan legenda akan menampilkan label ini.
+
+\lstinputlisting[firstline=17, lastline=21]{src/6/1174062/Teori/1174062.py}
+
+\item Apa fungsi Dari Subplot di Matplotlip, dan Bagaimana Cara Kerja Dari Fungsi Subplot, Sertakan Ilustrasi dan Gambaar sendiri dan 
+Apa Parameternya Jika Ingin Menggambar dengan 9 Subplot di Dalamnya.
+
+Fungsi Subplot pada Matplotlib adalah kita dapat memanggil () untuk memplot sebanyak dua kali ataupun lebih dalam satu gambar.\\
+
+\lstinputlisting[firstline=22, lastline=45]{src/6/1174062/Teori/1174062.py}
+Ilustrasi 9 Gambar Subplot:
+	\begin{figure}[ht!]
+	\includegraphics[width=7cm]{figures/6/1174062/subplot.png}
+	\centering
+	\end{figure}
+
+\item Sebutkan parameter color yang bisa digunakan:
+Matplotlib mengenali format berikut untuk menentukan warna:\\
+\begin{enumerate}
+\item tuple RGB yaitu {'r', 'g', 'b'}
+	- {'tab:red','tab:green','tab:blue'}
+\item Tuple CMYK yaitu {'c', 'm', 'y','k'}
+	- {'tab:cyan','tab:magenta','tab:yellow','tab:black'}; 
+\end{enumerate}
+
+\item Bagaimana Cara Kerja Dari Fungsi Hist, sertakan Ilustrasi Dan Gambar Sendiri.\\
+
+Pada histogram kedua titik koordinat boleh tidak sama, Misalnya X mempunyai 10 nilai sedangkan Y nya ada 5 nilai, 
+karena diagram ini digunakan untuk mendata usia dari rentang tertentu atau kebutuhan lainnya.
+Contoh dari penggunaan histogram :
+\lstinputlisting[firstline=46, lastline=55]{src/6/1174062/Teori/1174062.py}
+
+Ilustrasi Gambar :
+	\begin{figure}[ht!]
+	\includegraphics[width=5cm]{figures/6/1174062/histogram.png}
+	\centering
+	\end{figure}
+
+
+\item Penjelasan tentang Parameter dari Fungsi Pie Diantaranya Labaels, Colors, Startangle, Shadow, Explode, Autopct.
+
+\begin{enumerate}
+\item Labels
+Urutan string yang memberikan label untuk setiap irisan,Jumlah label harus sama dengan jumlah elemen.
+\item Colors \\
+Urutan warna matplotlib berargumentasi di mana diagram lingkaran akan berputar. Jika Tidak Ada, akan menggunakan warna dalam siklus aktif saat ini.
+\item Startangle \\
+Jika tidak ada, apakah string atau fungsi yang digunakan untuk memberi label pada irisan dengan nilai numeriknya. 
+Label akan ditempatkan di dalam irisan. Jika ini adalah string format, label akan menjadi fmt persen. Jika Fungsi itu akan dipanggil.
+\item Shadow \\
+Gambar bayangan di bawah pai.
+\item Explode \\
+mengimbangi irisan dari pie.explode adalah vektor atau matriks nol dan nonzeros yang sesuai dengan Fungsi pie mengimbangi 
+irisan untuk elemen bukan nol hanya dalam explode .
+\item Autopct \\
+autopct memungkinkan Anda untuk menampilkan nilai persen menggunakan pemformatan string Python. Dengan Autopct dan Callable kita dapat melakukan hal lebih.
+
+\item Plagiarisme
+	\begin{figure}[ht!]
+	\includegraphics[width=5cm]{figures/6/1174062/plagiat.png}
+	\centering
+	\end{figure}
 
 \end{enumerate}
